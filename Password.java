@@ -1,8 +1,9 @@
+import java.util.Random;
 
 public class Password {
 
-	private int longitud;
-	private String contraseña;
+	protected int longitud;
+	protected String contraseña;
 	
 	
 	public Password(String contraseña) {
@@ -15,13 +16,16 @@ public class Password {
 	public Password(int longitud) {
 		
 		this.longitud = longitud;
-		int prueba ;
-		for (int i = 0; i < 50; i++) {
-            prueba=(int) (Math.random()*9999+1); 
-            System.out.print(prueba+"  ");
-        }
+		String pass="";
 		
+		for(int i=0; i < longitud; i++) {
+			
+			 Random random = new Random();
+			 char randomizedCharacter = (char) (random.nextInt(26) + 'a');
+	         pass+= randomizedCharacter;
+		}
+		
+		this.contraseña = pass;
 		
 	}
-	
 }

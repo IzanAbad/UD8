@@ -1,11 +1,11 @@
 
 public class Serie {
 
-	private String titulo;
-	private int temporadas;
-	private boolean entregado;
-	private String genero;
-	private String creador;
+	protected String titulo;
+	protected int temporadas;
+	protected boolean entregado;
+	protected String genero;
+	protected String creador;
 	
 	
 	public Serie() {

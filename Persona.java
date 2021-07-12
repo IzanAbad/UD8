@@ -1,12 +1,12 @@
 
 public class Persona {
 
-	private String nombre;
-	private int edad;
-	private int DNI;
-	private String sexo;
-	private double peso;
-	private double altura;
+	protected String nombre;
+	protected int edad;
+	protected int DNI;
+	protected String sexo;
+	protected double peso;
+	protected double altura;
 	
 	final String sex = "h";
 	public Persona() {

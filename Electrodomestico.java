@@ -2,10 +2,10 @@
 public class Electrodomestico {
 
 	
-	private double precio;
-	private String color;
-	private String consumo;
-	private double peso;
+	protected double precio;
+	protected String color;
+	protected String consumo;
+	protected double peso;
 	
 	final int price = 100;
 	final String colour = "blanco";
@@ -32,10 +32,10 @@ public Electrodomestico(double precio, double peso) {
 
 public Electrodomestico(double precio, String color, String consumo, double peso) {
 	
-	this.precio = precio;
-	this.color = color;
-	this.consumo = consumo;
-	this.peso = peso;
-	
+		this.precio = precio;
+		this.color = color;
+		this.consumo = consumo;
+		this.peso = peso;
+		
 }
 }
