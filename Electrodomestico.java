@@ -5,7 +5,7 @@ public class Electrodomestico {
 	protected double precio;
 	protected String color;
 	protected String consumo;
-	protected double peso;
+	private double peso;
 	
 	final int price = 100;
 	final String colour = "blanco";
@@ -33,7 +33,14 @@ public Electrodomestico(double precio, double peso) {
 public Electrodomestico(double precio, String color, String consumo, double peso) {
 	
 		this.precio = precio;
+		
+		color = color.toLowerCase();
+		
+		if(color.equals("blanco")||color.equals("negro")||color.equals("rojo")||color.equals("azul")||color.equals("gris")) {
 		this.color = color;
+		}else {
+			this.color= colour;
+		}
 		this.consumo = consumo;
 		this.peso = peso;
 		
